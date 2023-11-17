@@ -18,24 +18,13 @@ document.write("<hr/>");
 {
     let number = 10; // declare and initialize the variable 
 
-    if(number % 2 == 0){
+    if (number % 2 == 0) {
 
-        document.write("The number = ", number , " is EVEN <br />" );
+        document.write("The number = ", number, " is EVEN <br />");
     }
-    else{
+    else {
 
-        document.write("The number =", number , " is ODD " );
-    }
-
-    number = 15; // update the value of the number 
-
-    if(number % 2 == 0){
-
-        document.write("The number = ", number , " is EVEN " );
-    }
-    else{
-
-        document.write("The number = ", number , " is ODD " );
+        document.write("The number =", number, " is ODD ");
     }
 }
 
@@ -58,36 +47,19 @@ document.write("<hr/>");
 
 {
     let temperature; // declare a temperature variable
-    
+
     temperature = 35; // assigne the value 
 
-    if(temperature > 32){
+    if (temperature > 32) {
 
         document.write("<br/>Temperature = ", temperature, " is above the Freezing (32<sup>o</sup> F)")
     }
-    else{
-        document.write("<br/>Temperature = ", temperature, " is not above the Freezing (32<sup>o</sup> F)")
-    }
-
-    temperature = 32; // update the value of the variable
-
-    if(temperature == 32){
+    else if (temperature == 32) {
 
         document.write("<br/>Temperature = ", temperature, " is equal to the Freezing (32<sup>o</sup> F)")
     }
-    else{
-        document.write("<br/>Temperature = ", temperature, " is not equal to the Freezing (32<sup>o</sup> F)")
-    }
-    
-    temperature = 10;
-
-    if(temperature < 32){
-
+    else
         document.write("<br/>Temperature = ", temperature, " is below the Freezing (32<sup>o</sup> F)")
-    }
-    else{
-        document.write("<br/>Temperature = ", temperature, " is not below the Freezing (32<sup>o</sup> F)")
-    }
 }
 
 
@@ -111,7 +83,7 @@ document.write("<hr/>");
 {
     let day = 5; // day = 1 -> sunday 
 
-    switch (day){
+    switch (day) {
         case 1:
             document.write("Day = ", day, " => ", "Sunday");
             break;
@@ -157,19 +129,19 @@ document.write("<hr/>");
 */
 
 {
-    let number = 5; 
+    let number = 5;
 
-    if(number > 0){
+    if (number > 0) {
 
-        document.write("The Given Number = ", number , " is Positive Number");
+        document.write("The Given Number = ", number, " is Positive Number");
     }
-    else if(number < 0){
+    else if (number < 0) {
 
-        document.write("The Given Number = ", number , " is Negative Number");
+        document.write("The Given Number = ", number, " is Negative Number");
     }
-    else{
+    else {
 
-        document.write("The Given Number = ", number , " is Equal to Zero");
+        document.write("The Given Number = ", number, " is Equal to Zero");
     }
 }
 
@@ -192,27 +164,22 @@ document.write("<hr/>");
 {
     let year = 1700;
 
-    if(year % 4 == 0)
-    {
-        if(year % 100 == 0)
-        {
-            if(year % 400 == 0)
-            {
-                document.write("The Year = ", year ," is a leap year");
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                document.write("The Year = ", year, " is a leap year");
             }
-            else
-            {
-                document.write("The Year = ", year ," is not a leap year000");
+            else {
+                document.write("The Year = ", year, " is not a leap year000");
             }
         }
-        else
-        {
+        else {
 
-            document.write("The Year = ", year ," is a leap year");
+            document.write("The Year = ", year, " is a leap year");
         }
     }
     else
-        document.write("The Year = ", year ," is not a leap year");
+        document.write("The Year = ", year, " is not a leap year");
 }
 
 document.write("<hr/>")
